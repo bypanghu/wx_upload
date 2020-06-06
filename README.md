@@ -3,7 +3,7 @@
 >基于colorUI的微信小程序上传图片视频  
 >由于客户需求多图上传，上传视频，  
 >类似于微信朋友圈的上传方式
-##食用方法
+## 食用方法
 > <kbd>colorui</kbd>
 >>这个目录是colorUI的集成目录，高颜值的小程序UI，了解请点击上方链接  
 >
@@ -18,8 +18,8 @@
 > <kbd>app.js</kbd> 里面有一个uploadImg()函数为上传函数（使用异步方法）
 
 
-##相关代码
-###config.js
+## 相关代码
+### config.js
 ```js
     var fileHost = "https://*********.oss-cn-hangzhou.aliyuncs.com/";//你的阿里云地址最后面跟上一个/   在你当前小程序的后台的uploadFile 合法域名也要配上这个域名
     var config = {
@@ -31,7 +31,7 @@
     };
     module.exports = config
 ```
-###封装的图片上传文件
+### 封装的图片上传文件
 ```js
    uploadImg(pics){
     return new Promise((resolve, reject) => {
