@@ -1,22 +1,21 @@
 # wx_upload_aliOss
-[<kbd>colorUI</kbd>](https://github.com/weilanwl/ColorUI)  
-<kbd>阿里云的OSS</kbd>
+[<kbd>colorUI</kbd>](https://github.com/weilanwl/ColorUI) <kbd>阿里云的OSS</kbd>
 >基于colorUI的微信小程序上传图片视频  
 >由于客户需求多图上传，上传视频，  
 >类似于微信朋友圈的上传方式
 ##食用方法
-> colorui  
+> <kbd>colorui</kbd>
 >>这个目录是colorUI的集成目录，高颜值的小程序UI，了解请点击上方链接  
 >
-> pages
->> index  
->>> index.js 里面存放上传方法（基本都有标注）
+><kbd> pages</kbd>
+>> <kbd>index</kbd>
+>>> <kbd>index.js</kbd> 里面存放上传方法（基本都有标注）
 >
-> utils  
+><kbd> utils  </kbd>
 >> 里面有很多上传函数的文件 除开util.js文件是时间处理文件 其他都是OSS上传所需的文件  
->>  config.js里面有一个OSS的配置文件，使用前请修改     
+>>  <kbd>config.js</kbd>里面有一个OSS的配置文件，使用前请修改     
 >
-> app.js 里面有一个uploadImg()函数为上传函数（使用异步方法）
+> <kbd>app.js</kbd> 里面有一个uploadImg()函数为上传函数（使用异步方法）
 
 
 ##相关代码
