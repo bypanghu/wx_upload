@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="cu-form-group ">
+    <block wx:if="{{type == 'img' }}">
+      <view class="grid col-4 grid-square flex-sub margin-top">
+        <view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+            <image src='{{imgList[index]}}' mode='aspectFill'></image>
+          <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+            <text class="cuIcon-close"></text>
+          </view>
+        </view>
+        <view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+          <text class="cuIcon-cameraadd"></text>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <video class="video" src="{{imgList}}"></video>
+    </block>
+	</view>
+  <view class="cu-form-group ">
+    <button class="cu-btn bg-green margin-tb-sm lg" bindtap="submint">确定发表</button>
+  </view>
+</view>
